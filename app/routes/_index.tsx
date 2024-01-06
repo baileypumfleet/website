@@ -10,12 +10,12 @@ export const meta: MetaFunction = () => {
 export default function Index() {
   return (
     <div>
-      <div className="bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-1/3 mx-auto rounded-lg p-4">
+      <div className="bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-10/12 lg:w-1/3 mx-auto rounded-lg p-4">
         <div className="flex">
           <img
             src="/avatar.png"
             alt="Bailey Pumfleet"
-            className="rounded-lg w-24"
+            className="rounded-lg w-24 h-24"
           />
           <div className="ml-6 self-center">
             <h1 className="text-4xl font-heading">Bailey Pumfleet</h1>
@@ -29,7 +29,7 @@ export default function Index() {
           consistently outpaces its competitors and disrupts the industry.
         </p>
       </div>
-      <div className="flex mt-4 bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-1/3 mx-auto rounded-lg py-4 text-sm text-center">
+      <div className="flex mt-4 bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-10/12 lg:w-1/3 mx-auto rounded-lg py-4 text-sm text-center">
         <a
           href="mailto:bailey@cal.com"
           className="w-1/5 text-slate-500 hover:text-slate-300 border-r border-slate-700"
