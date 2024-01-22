@@ -1,9 +1,14 @@
 import type { MetaFunction } from "@remix-run/node";
+import { Link } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
     { title: "Bailey Pumfleet" },
-    { name: "description", content: "Bailey is the co-founder and CEO of Cal.com, scheduling infrastruture for absolutely everyone." },
+    {
+      name: "description",
+      content:
+        "Bailey is the co-founder and CEO of Cal.com, scheduling infrastruture for absolutely everyone.",
+    },
   ];
 };
 
@@ -29,7 +34,7 @@ export default function Index() {
           consistently outpaces its competitors and disrupts the industry.
         </p>
       </div>
-      <div className="flex mt-4 bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-10/12 lg:w-1/3 mx-auto rounded-lg py-4 text-sm text-center">
+      <div className="flex mt-4 bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 w-10/12 lg:w-1/3 mx-auto rounded-lg py-4 text-xs lg:text-sm text-center">
         <a
           href="mailto:bailey@cal.com"
           className="w-1/5 text-slate-500 hover:text-slate-300 border-r border-slate-700"
@@ -110,6 +115,17 @@ export default function Index() {
           </svg>
           <span>GitHub</span>
         </a>
+      </div>
+      <div className="mt-4 grid grid-cols-3 gap-4 w-10/12 lg:w-1/3 mx-auto">
+        <Link to="/about" className="w-full text-center text-slate-400 hover:text-slate-300 text-sm bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 mx-auto rounded-lg py-2 px-4">
+          About
+        </Link>
+        <a href="https://cal.com" className="w-full text-center text-slate-400 hover:text-slate-300 text-sm bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 mx-auto rounded-lg py-2 px-4">
+          Cal.com
+        </a>
+        <Link to="/consulting" className="w-full text-center text-slate-400 hover:text-slate-300 text-sm bg-gradient-to-tr from-slate-900 to-slate-800 border border-slate-700 mx-auto rounded-lg py-2 px-4">
+          Consulting
+        </Link>
       </div>
     </div>
   );
