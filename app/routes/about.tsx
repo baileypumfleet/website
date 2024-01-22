@@ -102,7 +102,7 @@ export default function Index() {
           way to become the scheduling infrastructure of the entire web.
         </p>
       </div>
-      <div className="mt-4 grid grid-cols-3 gap-4 w-10/12 lg:w-1/3 mx-auto">
+      <div className="mb-32 mt-4 grid grid-cols-3 gap-4 w-10/12 lg:w-1/3 mx-auto">
         <Link
           to="/"
           className="w-full text-center text-slate-300 hover:text-slate-100 text-sm bg-gradient-to-tr from-slate-800 to-slate-700 border border-slate-700 mx-auto rounded-lg py-2 px-4"
